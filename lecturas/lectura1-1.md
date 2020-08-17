@@ -1,0 +1,7 @@
+# Item-Based Collaborative Filtering Recommendation Algorithms
+
+Este paper muestra en qué consiste la recomendación mediante filtración colaborativa basada en ítems. En él los autores explican varias formas de aplicación de este método, pasando por algunas etapas como: calcular la similiaridad entre diferentes ítems y luego usar esas similaridades para realizar una predicción para el usuario. Finalmente realizan una serie de experimentos que les ayudan a concluir cuál es la forma de aplicación que mejor les resulta. En este caso la combinación que les dió mejores resultados fue: obtener las similaridades mediante la fórmula del coseno ajustado y luego realizar las predicciones a partir de la suma ponderada de aquellas similaridades.
+
+Personalmente, tengo un muy escaso conocimiento sobre estos temas, pero a pesar de que en un comienzo se me hizo difícil leerlo, debido a los términos técnicos que se emplean, fue una lectura que me resultó extremadamente útil para iniciarme en sistemas recomendadores. Principalmente, me ayudó a comprender que un método basado en ítems puede funcionar a partir de los *ratings* entregados por los usuarios y no solo con las características propias de cada objeto, como pensaba yo en un comienzo.
+
+Me gustó también que ofrecieran más de una alternativa para realizar las predicciones y que hicieran experimentos con cada una de ellas.
