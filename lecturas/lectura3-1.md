@@ -4,8 +4,8 @@ En este *paper*, escrito por Cremonesi, Koren y Turrin, se evalúan distintos m�
 
 Para llevar a cabo esta tarea, primero que todo, adaptaron los datos originales para crear un nuevo set de *test*. Se creó un *test set T* que contiene todos los *ratings* de 5 estrellas puestos por los diferentes usuarios. Así, si la película *i*, con calificación perfecta para el usuario, al compararla con otras 1000 películas al azar y sin calificar, se encuentra dentro de las N recomendaciones entregadas para él, se tendría un éxito. De lo contrario, se consideraría como fracaso. Esto me pareció creativo y arriesgado a la vez, ya que no se parece a las formas más populares de evaluar el rendimiento de un algoritmo. Definitivamente ver esto fue una experiencia positiva para mí, ya que no conocía métricas de exactitud, como *precision* y *recall*. 
 
-Se podría considerar que una película de 4 estrellas sí es recomendable.
-
 También me pareció que explicaron y justificaron de forma concisa las decisiones que toman, como por ejemplo, la no normalización de los *ratings* para el método *Cosine Neighborhood*. Esto da a entender que se preocuparon de detalles, que por pequeños que sean, pueden colaborar en significativos aumentos en el rendimiento. Con esto se puede ver que, en ciertos casos, top-N puede incluso llegar a simplicar los algoritmos, lo que siempre será una ventaja.
 
-Idea de quitar los elementos más populares, incrementó rendimientos, como el de cor-kNN.
+Otra idea que encontré altamente contribuyente fue la de quitar los elementos más populares a la hora de hacer las recomendaciones. Esto incrementó rendimientos, como el de cor-kNN.
+
+En conclusión, esta forma de recomendar ítems que puedan ser del gusto del usuario, es de las publicaciones más novedosas que he visto hasta el momento. Mucho de esto se debe a que las *Top-N based accuracy measures* consideran todos los pares ítem-usuario y no solo los ítems que han sido calificados previamente, como los modelos orientados a RMSE.
