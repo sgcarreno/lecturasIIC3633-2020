@@ -1,0 +1,11 @@
+# Document Clustering Based On Non-negative Matrix Factorization
+
+En este *paper*, escrito por Xu, Liu y Gong, describen y experimentan con la técnica de de *document clustering* basado en una factorización de matriz no negativa. Explican que este tiene menos complejidad que otros métodos, lo que lo hace una opción viable para *sets* de millones de datos.
+
+En su método propuesto, hay un espacio de k dimensiones, en el que cada eje correponde a un tópico. Luego, cada documento es representado como una combinación lineal de los k tópicos. Aquí deciden mantener la naturalidad de la solución, y señalan que los coeficientes de aquellas combinaciones solo tendrán valores no negativos. Personalmente, estoy muy de acuerdo con esa decisión, ya que no tendría mucho sentido restar algunos de estos tópicos en la solución, porque es difícil que un documento hable sobre aquello de lo que no se trata. Es decir que, si es mencionado algún tópico, necesariamente el *paper* estaría tratando ese tema, aunque sea de forma negativa, por lo que no es conveniente restarlo.
+
+Al momento de entrenar y testear su método, encontré muy valioso que decidieran usar dos *corpora* de documentos, y que ambos fuesen tan heterogéneos. Sobre todo por la diferencia que hay en la cantidad de documentos, y que los documentos de uno están categorizados de una forma más directa que los documentos del otro.
+
+Luego, en la parte *Performance Evaluation and Comparisons*, comparan su método propuesto con dos de los métodos que entregaban los mejores resultados en ese entonces. *Average Associations* y *Normalized Cut*. Esto nos permite ver cuánto es realmente el aporte de estos nuevos métodos a los sistemas ya existentes.
+
+Resulta que NMF-NCW con un k igual a 2 entrega los mejores resultados para ambos *datasets*, demostrando, entre otras cosas, que apicar el peso NC trae ventajas, tanto para los métodos de *spectral clustering* como para NMF. Finalmente, los métodos aplicados por los autores de este *paper* resultaron ser bastante exitosos, especialmente en el *dataset* más grande y diseñado con categoría única.
