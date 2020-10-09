@@ -1,0 +1,13 @@
+# Inspectability and Control in Social Recommenders
+
+Esta publicación realizada por Knijnenburg et al., habla sobre cómo el control que se le entrega al usuario sobre el sistema recomendador, junto con la inspeccionabilidad con la que recomienda, afecta su percepción acerca de las recomendaciones realizadas.
+
+Durante la investigación se realizó, de manera *online*, un experimento con 267 participantes. En este se utilizó un sistema que recomienda artistas y bandas a través de un algoritmo que toma en cuenta a los amigos de Facebook del usuario con gustos similares a los suyos. El algoritmo no es nada fuera de lo común, pero parece ser bastante efectivo para su nivel de simplicidad, lo que siempre será agradecido, en términos de comprensión del sistema y de su implementación.
+
+La parte de inspeccionabilidad entra al sistema, ya que, para mostrarle al usuario sus ítems, sus amigos y las recomendaciones, se despliega un grafo. Este tiene un diseño simple y me imagino que será fácil de entender para el usuario que se vea enfrentado a él, sin la necesidad de que tenga un alto conocimiento de la tecnología.
+
+Luego el sistema se complica un poco para el usuario, con los parámetros ajustables. Estos permiten darle un mayor control al usuario sobre las recomendaciones. Uno puede entregarle más peso a un ítem o a un usuario, lo que me parece muy útil, ya que todos tenemos ítems favoritos, o conocemos personas cuyos gustos nos identifican más que los de otras, en cuyos gustos no confiamos del todo.
+
+Más adelante, en el apartado *Results*, se muestra un complejo modelo estructural de la data del experimento. Este se ve bastante desordenado a primera vista, pero a medida que uno se acerca a analizarlo, puede comprender de qué se tratan todas las divisiones que lo componen, como los objetivos del sistema (*Control* e *Inspectability*), y a través de qué factores pueden ser logrados.
+
+En resumen, este *paper* demuestra la importancia que tienen el control y la inspeccionabilidad en la calidad que los usuarios perciben de la recomendación que se les realizó. Al final de la publicación, se muestran gráficos que visibilizan los efectos que estos dos aspectos generan sobre los factores subjetivos que definen la experiencia del usuario. Se puede ver también qué tipo de control los usuarios prefieren, y en el mayor de los casos es el *friend control*. Sin embargo, la diferencia con el control sobre ítems es bastante pequeña, por lo que se puede inferir que la importancia de ambos es similar.
